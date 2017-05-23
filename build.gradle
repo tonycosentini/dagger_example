@@ -1,0 +1,13 @@
+plugins {
+    id "java"
+    id "net.ltgt.apt" version "0.10"
+}
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    apt 'com.google.dagger:dagger-compiler:2.9.1-LOCAL'
+    compile "com.google.dagger:dagger:2.9.1-LOCAL"
+}
