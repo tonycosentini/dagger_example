@@ -7,5 +7,9 @@ public class Main {
 
         parentComponent.integer();
         parentComponent.string();
+
+        ChildComponentOne childComponent = DaggerChildComponentOne.builder()
+                .childParentComponentOne(parentComponent)
+                .build();
     }
 }
